@@ -1,0 +1,106 @@
+
+/* header */
+.App__header {
+  background-color: #222;
+  padding: 0 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.App__logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 8rem;
+  transform-origin: center;
+}
+
+.App__title {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .App__header {
+    padding: 1rem 0;
+    justify-content: center;
+  }
+  .App__logo {
+    height: 4rem;
+  }
+  .App__title {
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* App/page body */
+.App__main {
+  max-width: 1024px;
+  width: 96%;
+  margin: 0 auto 10vh;
+}
+
+
+/* Form */
+.form--search {
+  margin-bottom: 2rem;
+}
+.form__input {
+  padding: 1.5rem;
+  border: 2px solid #61dafb;
+  width: 100%;
+  border-radius: .3rem;
+  background-color: 'white';
+  transition: .2s ease-in-out all;
+}
+.form__input:focus {
+  box-shadow: 8px 0 10px rgba(0,0,0,.2);
+  transform: scale(1.01);
+}
+
+
+
+
+/* movie loop */
+.result-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20vh;
+}
+.movie-post {
+  display: flex;
+  padding: 1.6rem;
+}
+.movie-post:nth-of-type(even) {
+  background-color: #EEE;
+}
+.movie-post:nth-of-type(odd) {
+  border: 1px solid #EEE;
+}
+.movie-post__poster-container {
+  padding: 0;
+  margin: 0 1.6rem 0 0;
+  flex: 1;
+}
+.movie-post__overview {
+  flex: 4;
+}
+.movie-post__title {
+  font-size: 1.8rem;
+  margin: 0 0 1.6rem;
+}
+.movie-post__overview-text {
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 680px) {
+  .movie-post__poster {
+    width: 9rem;
+  }
+}
